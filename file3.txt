@@ -1,0 +1,22 @@
+
+Welcome to My Website
+
+This is a simple text file.
+
+Name: John
+Date: 2026-11-22
+About:
+This is an example of a plain text document.
+
+Contact:
+Email: example@email.com
+
+Name: Peter
+Date: 2026-10-25
+About:
+This is an example of a plain text document.
+
+Contact:
+Email: examples@email.com
+
+Thank you!
