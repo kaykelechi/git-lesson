@@ -2,122 +2,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nova | Modern Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <style>
+        /* General styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #444;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        /* Main content */
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        /* Button */
+        button {
+            background: #00bcd4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0097a7;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            main {
+                margin: 15px;
+            }
+        }
+    </style>
 </head>
 
-<body style="margin:0; padding:0; font-family:Arial,sans-serif; background:#0f172a; color:white;">
+<body>
 
-  <!-- Navigation -->
-  <header style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px; padding:24px 8%; border-bottom:1px solid #334155;">
+    <header>
+        <h1>My Website</h1>
+        <p>Welcome to my website</p>
+    </header>
 
-    <a href="#" style="font-size:28px; font-weight:bold; color:#38bdf8; text-decoration:none;">
-      Nova.
-    </a>
-
-    <nav style="display:flex; gap:25px;">
-      <a href="#home" style="color:#cbd5e1; text-decoration:none;">Home</a>
-      <a href="#features" style="color:#cbd5e1; text-decoration:none;">Features</a>
-      <a href="#about" style="color:#cbd5e1; text-decoration:none;">About</a>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <a href="#features" style="background:#38bdf8; color:#0f172a; padding:12px 20px; border-radius:8px; text-decoration:none; font-weight:bold;">
-      Get Started
-    </a>
-  </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>This is a simple HTML and CSS website template.</p>
+            <button>Learn More</button>
+        </section>
 
-  <!-- Hero Section -->
-  <main>
-    <section id="home" style="text-align:center; padding:120px 20px; background:linear-gradient(135deg,#1e3a5f,#0f172a);">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Add information about your website or business here.</p>
+        </section>
 
-      <p style="color:#38bdf8; font-size:14px; letter-spacing:3px;">
-        WELCOME TO NOVA
-      </p>
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>Describe your services here.</p>
+        </section>
 
-      <h1 style="font-size:clamp(38px,6vw,64px); margin:20px 0; line-height:1.2;">
-        Build Something
-        <span style="color:#38bdf8;">Amazing.</span>
-      </h1>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: example@email.com</p>
+        </section>
+    </main>
 
-      <p style="max-width:550px; margin:0 auto 35px; color:#94a3b8; font-size:18px; line-height:1.7;">
-        Create beautiful digital experiences with modern design,
-        powerful tools, and endless possibilities.
-      </p>
-
-      <a href="#features" style="display:inline-block; background:#38bdf8; color:#0f172a; padding:15px 30px; border-radius:8px; font-size:16px; text-decoration:none; font-weight:bold;">
-        Explore Features →
-      </a>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" style="padding:90px 8%; text-align:center;">
-
-      <h2 style="font-size:36px; margin-bottom:45px;">
-        Why Choose Us?
-      </h2>
-
-      <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:25px;">
-
-        <!-- Card 1 -->
-        <div style="background:#1e293b; padding:35px 25px; border-radius:14px; border:1px solid #334155; flex:1 1 220px; max-width:350px;">
-          <div style="font-size:40px; margin-bottom:20px;">⚡</div>
-
-          <h3 style="font-size:22px; margin-bottom:12px;">
-            Fast Performance
-          </h3>
-
-          <p style="color:#94a3b8; line-height:1.6;">
-            Experience lightning-fast and optimized websites.
-          </p>
-        </div>
-
-        <!-- Card 2 -->
-        <div style="background:#1e293b; padding:35px 25px; border-radius:14px; border:1px solid #334155; flex:1 1 220px; max-width:350px;">
-          <div style="font-size:40px; margin-bottom:20px;">🎨</div>
-
-          <h3 style="font-size:22px; margin-bottom:12px;">
-            Modern Design
-          </h3>
-
-          <p style="color:#94a3b8; line-height:1.6;">
-            Beautiful interfaces designed for everyone.
-          </p>
-        </div>
-
-        <!-- Card 3 -->
-        <div style="background:#1e293b; padding:35px 25px; border-radius:14px; border:1px solid #334155; flex:1 1 220px; max-width:350px;">
-          <div style="font-size:40px; margin-bottom:20px;">🔒</div>
-
-          <h3 style="font-size:22px; margin-bottom:12px;">
-            Secure Platform
-          </h3>
-
-          <p style="color:#94a3b8; line-height:1.6;">
-            Built with reliability and security in mind.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" style="text-align:center; padding:75px 20px; background:#1e293b;">
-
-      <h2 style="font-size:32px; margin-bottom:15px;">
-        About Nova
-      </h2>
-
-      <p style="color:#94a3b8; font-size:17px;">
-        We make modern web experiences simple.
-      </p>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer style="text-align:center; padding:30px 20px; color:#64748b; font-size:14px;">
-    &copy; 2026 Nova. All rights reserved.
-  </footer>
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
